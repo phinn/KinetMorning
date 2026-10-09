@@ -98,6 +98,18 @@ footer{padding:36px 0;color:var(--dim);font-size:13px}
 .foot{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
 .foot a{color:var(--muted)}.foot a:hover{color:var(--dawn)}
 
+/* apps family */
+.apps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.acard{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:8px;transition:transform .18s ease,border-color .18s ease}
+.acard:hover{transform:translateY(-3px);border-color:var(--dawn)}
+.acard .ic{width:52px;height:52px;border-radius:13px;background:var(--surface2);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:26px}
+.acard h3{font-size:15.5px;font-weight:700}
+.acard .cat{font-size:12px;color:var(--dim)}
+.acard p{font-size:13px;color:var(--muted);flex:1}
+.acard .go{font-size:13px;color:var(--dawn);font-weight:600}
+@media (max-width:860px){.apps{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.apps{grid-template-columns:1fr}}
+
 @media (max-width:860px){
   .hero .wrap{grid-template-columns:1fr;gap:44px}
   h1{font-size:34px}
@@ -221,6 +233,78 @@ footer{padding:36px 0;color:var(--dim);font-size:13px}
   </div>
 </section>
 
+<section id="apps">
+  <div class="wrap">
+    <div class="sechead">
+      <div class="kicker" data-i18n="appsKick">更多应用</div>
+      <h2 data-i18n="appsTitle">同一个开发者的其他应用</h2>
+      <p data-i18n="appsSub">一样的小而专注,一样的隐私优先:数据留在你的设备上。</p>
+    </div>
+    <div class="apps">
+      <a class="acard" href="https://apps.apple.com/us/app/id6809450051" target="_blank" rel="noopener">
+        <div class="ic">🤖</div><h3>KinetAios</h3><div class="cat" data-i18n="a1c">Mac · AI 工作台</div>
+        <p data-i18n="a1d">Claude Code & Codex 原生客户端,Mac 上的 AI Agent 仪表盘。</p>
+        <span class="go" data-i18n="aGo">App Store →</span>
+      </a>
+      <a class="acard" href="https://apps.apple.com/us/app/id6780944289" target="_blank" rel="noopener">
+        <div class="ic">✅</div><h3>KinetTask</h3><div class="cat" data-i18n="a2c">iPhone · 效率</div>
+        <p data-i18n="a2d">100% 端侧 AI 任务管理,任务数据永不离开你的设备。</p>
+        <span class="go" data-i18n="aGo">App Store →</span>
+      </a>
+      <a class="acard" href="https://apps.apple.com/us/app/id6813593104" target="_blank" rel="noopener">
+        <div class="ic">🎙️</div><h3>KinetMinutes</h3><div class="cat" data-i18n="a3c">Mac · 效率</div>
+        <p data-i18n="a3d">会议自动转结构化笔记,全程本地、私密。</p>
+        <span class="go" data-i18n="aGo">App Store →</span>
+      </a>
+      <a class="acard" href="https://apps.apple.com/us/app/id6782778566" target="_blank" rel="noopener">
+        <div class="ic">☀️</div><h3>KinetBrief</h3><div class="cat" data-i18n="a4c">iPhone · 工具</div>
+        <p data-i18n="a4d">把一整天的会议浓缩成一份晨间简报。</p>
+        <span class="go" data-i18n="aGo">App Store →</span>
+      </a>
+      <a class="acard" href="https://apps.apple.com/us/app/id6780600464" target="_blank" rel="noopener">
+        <div class="ic">💛</div><h3>KinetSoul</h3><div class="cat" data-i18n="a5c">iPhone · 健康</div>
+        <p data-i18n="a5d">住在你设备里的温暖 AI 陪伴,不上传任何数据。</p>
+        <span class="go" data-i18n="aGo">App Store →</span>
+      </a>
+      <a class="acard" href="https://apps.apple.com/us/app/id6807457522" target="_blank" rel="noopener">
+        <div class="ic">🧝</div><h3>KinetElf</h3><div class="cat" data-i18n="a6c">iPhone · 生活</div>
+        <p data-i18n="a6d">会说话的口袋精灵,灵动岛上的 AI 小助手。</p>
+        <span class="go" data-i18n="aGo">App Store →</span>
+      </a>
+      <a class="acard" href="https://apps.apple.com/us/app/id6815923723" target="_blank" rel="noopener">
+        <div class="ic">🧠</div><h3>KinetMemory</h3><div class="cat" data-i18n="a7c">iPhone · 教育</div>
+        <p data-i18n="a7d">基于 FSRS 的现代间隔重复记忆应用。</p>
+        <span class="go" data-i18n="aGo">App Store →</span>
+      </a>
+      <a class="acard" href="https://apps.apple.com/us/app/id6817339084" target="_blank" rel="noopener">
+        <div class="ic">🐾</div><h3>FurChart</h3><div class="cat" data-i18n="a8c">iPhone · 生活</div>
+        <p data-i18n="a8d">宠物完整健康档案,本地优先,随手可查。</p>
+        <span class="go" data-i18n="aGo">App Store →</span>
+      </a>
+      <a class="acard" href="https://apps.apple.com/us/app/id6788598907" target="_blank" rel="noopener">
+        <div class="ic">🌙</div><h3>DreamKnock</h3><div class="cat" data-i18n="a9c">Apple Watch · 健康</div>
+        <p data-i18n="a9d">把 Apple Watch 变成清醒梦入口,在梦里醒来。</p>
+        <span class="go" data-i18n="aGo">App Store →</span>
+      </a>
+      <a class="acard" href="https://apps.apple.com/us/app/id6797004663" target="_blank" rel="noopener">
+        <div class="ic">📚</div><h3>KinetStudy</h3><div class="cat" data-i18n="a10c">iPhone · 工具</div>
+        <p data-i18n="a10d">AI 作业批改助手,拍一张照即出讲解。</p>
+        <span class="go" data-i18n="aGo">App Store →</span>
+      </a>
+      <a class="acard" href="https://apps.apple.com/us/app/id6773755689" target="_blank" rel="noopener">
+        <div class="ic">🏃</div><h3>KinetFit</h3><div class="cat" data-i18n="a11c">iPhone · 健康</div>
+        <p data-i18n="a11d">隐私优先的健身训练伴侣。</p>
+        <span class="go" data-i18n="aGo">App Store →</span>
+      </a>
+      <a class="acard" href="https://apps.apple.com/us/app/id6779978181" target="_blank" rel="noopener">
+        <div class="ic">🌅</div><h3>KinetMorning</h3><div class="cat" data-i18n="a12c">iPhone · 本页应用</div>
+        <p data-i18n="a12d">爸妈一键打卡,全家远程安心 —— 就是你正在看的这款。</p>
+        <span class="go" data-i18n="aGo">App Store →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
 <footer>
   <div class="wrap foot">
     <div>© 2026 KinetMorning · <img src="icon.png" alt="" style="width:20px;height:20px;border-radius:5px;vertical-align:-4px"> <span data-i18n="ftMade">为每一个不在身边的牵挂而做</span></div>
@@ -258,7 +342,21 @@ const I18N = {
   prSub:"无账号、无广告、无分析 SDK。打卡数据只存在你的设备和你自己的 iCloud 里,仅在绑定的家人之间同步。开发者无法读取。",
   chip1:"账号", chip2:"广告", chip3:"第三方 SDK", chip4:"追踪",
   prLink:"阅读完整隐私政策 →",
-  ftMade:"为每一个不在身边的牵挂而做", ftPriv:"隐私政策"
+  ftMade:"为每一个不在身边的牵挂而做", ftPriv:"隐私政策",
+  appsKick:"更多应用", appsTitle:"同一个开发者的其他应用", appsSub:"一样的小而专注,一样的隐私优先:数据留在你的设备上。",
+  aGo:"App Store →",
+  a1c:"Mac · AI 工作台", a1d:"Claude Code & Codex 原生客户端,Mac 上的 AI Agent 仪表盘。",
+  a2c:"iPhone · 效率", a2d:"100% 端侧 AI 任务管理,任务数据永不离开你的设备。",
+  a3c:"Mac · 效率", a3d:"会议自动转结构化笔记,全程本地、私密。",
+  a4c:"iPhone · 工具", a4d:"把一整天的会议浓缩成一份晨间简报。",
+  a5c:"iPhone · 健康", a5d:"住在你设备里的温暖 AI 陪伴,不上传任何数据。",
+  a6c:"iPhone · 生活", a6d:"会说话的口袋精灵,灵动岛上的 AI 小助手。",
+  a7c:"iPhone · 教育", a7d:"基于 FSRS 的现代间隔重复记忆应用。",
+  a8c:"iPhone · 生活", a8d:"宠物完整健康档案,本地优先,随手可查。",
+  a9c:"Apple Watch · 健康", a9d:"把 Apple Watch 变成清醒梦入口,在梦里醒来。",
+  a10c:"iPhone · 工具", a10d:"AI 作业批改助手,拍一张照即出讲解。",
+  a11c:"iPhone · 健康", a11d:"隐私优先的健身训练伴侣。",
+  a12c:"iPhone · 本页应用", a12d:"爸妈一键打卡,全家远程安心 —— 就是你正在看的这款。"
 },
 "zh-Hant":{
   title:"KinetMorning — 早 · 爸媽的每日安心打卡",
@@ -288,7 +386,21 @@ const I18N = {
   prSub:"無帳號、無廣告、無分析 SDK。打卡資料只存在你的裝置和你自己的 iCloud 裡,僅在綁定的家人之間同步。開發者無法讀取。",
   chip1:"帳號", chip2:"廣告", chip3:"第三方 SDK", chip4:"追蹤",
   prLink:"閱讀完整隱私政策 →",
-  ftMade:"為每一個不在身邊的牽掛而做", ftPriv:"隱私政策"
+  ftMade:"為每一個不在身邊的牽掛而做", ftPriv:"隱私政策",
+  appsKick:"更多應用", appsTitle:"同一個開發者的其他應用", appsSub:"一樣的小而專注,一樣的隱私優先:數據留在你的裝置上。",
+  aGo:"App Store →",
+  a1c:"Mac · AI 工作台", a1d:"Claude Code & Codex 原生用戶端,Mac 上的 AI Agent 儀表板。",
+  a2c:"iPhone · 效率", a2d:"100% 端側 AI 任務管理,任務數據永不離開你的裝置。",
+  a3c:"Mac · 效率", a3d:"會議自動轉結構化筆記,全程本地、私密。",
+  a4c:"iPhone · 工具", a4d:"把一整天的會議濃縮一一份晨間簡報。",
+  a5c:"iPhone · 健康", a5d:"住在你裝置裡的溫暖 AI 陪伴,不上傳任何數據。",
+  a6c:"iPhone · 生活", a6d:"會說話的口袋精靈,動態島上的 AI 小助手。",
+  a7c:"iPhone · 教育", a7d:"基於 FSRS 的現代間隔重複記憶應用。",
+  a8c:"iPhone · 生活", a8d:"寵物完整健康檔案,本地優先,隨手可查。",
+  a9c:"Apple Watch · 健康", a9d:"把 Apple Watch 變成清醒夢入口,在夢裡醒來。",
+  a10c:"iPhone · 工具", a10d:"AI 作業批改助手,拍一張照即出講解。",
+  a11c:"iPhone · 健康", a11d:"隱私優先的健身訓練伴侶。",
+  a12c:"iPhone · 本頁應用", a12d:"爸媽一鍵打卡,全家遠程安心 —— 就是你正在看的這款。"
 },
 "en":{
   title:"KinetMorning — Daily Check-in for Aging Parents",
@@ -318,7 +430,21 @@ const I18N = {
   prSub:"No accounts, no ads, no analytics SDKs. Check-in data lives on your device and in your own iCloud, synced only among linked family members. The developer cannot read it.",
   chip1:"accounts", chip2:"ads", chip3:"third-party SDKs", chip4:"tracking",
   prLink:"Read the full privacy policy →",
-  ftMade:"Made for everyone who worries from afar", ftPriv:"Privacy Policy"
+  ftMade:"Made for everyone who worries from afar", ftPriv:"Privacy Policy",
+  appsKick:"More Apps", appsTitle:"More from the same developer", appsSub:"Small, focused, and privacy-first — your data stays on your device.",
+  aGo:"App Store →",
+  a1c:"Mac · AI Workbench", a1d:"A native client for Claude Code & Codex — the AI agent dashboard for Mac.",
+  a2c:"iPhone · Productivity", a2d:"100% on-device AI task manager. Your tasks never leave your device.",
+  a3c:"Mac · Productivity", a3d:"Turns meetings into structured notes — automatically, privately, locally.",
+  a4c:"iPhone · Utilities", a4d:"Turns a day of meetings into one morning brief.",
+  a5c:"iPhone · Health", a5d:"A warm AI companion that lives on your device — nothing uploaded.",
+  a6c:"iPhone · Lifestyle", a6d:"A pocket elf that talks back — an AI buddy on the Dynamic Island.",
+  a7c:"iPhone · Education", a7d:"A modern spaced-repetition app powered by FSRS.",
+  a8c:"iPhone · Lifestyle", a8d:"Your pet's complete medical history, always at hand. Local-first.",
+  a9c:"Apple Watch · Health", a9d:"Turn your Apple Watch into a lucid-dream entry point.",
+  a10c:"iPhone · Utilities", a10d:"AI homework-grading assistant — snap a photo, get an explanation.",
+  a11c:"iPhone · Health", a11d:"A privacy-first fitness training companion.",
+  a12c:"iPhone · This page", a12d:"One tap for mom and dad — the very app you're looking at."
 },
 "ja":{
   title:"KinetMorning — 早 · 親の毎日安否チェック",
@@ -348,7 +474,21 @@ const I18N = {
   prSub:"アカウントなし・広告なし・分析 SDK なし。安否データはあなたのデバイスとあなた自身の iCloud にだけ保存され、リンクされた家族間でのみ同期されます。",
   chip1:"アカウント", chip2:"広告", chip3:"サードパーティ SDK", chip4:"トラッキング",
   prLink:"プライバシーポリシー全文を読む →",
-  ftMade:"離れて暮らすすべての家族のために", ftPriv:"プライバシーポリシー"
+  ftMade:"離れて暮らすすべての家族のために", ftPriv:"プライバシーポリシー",
+  appsKick:"その他のアプリ", appsTitle:"同じ開発者の他のアプリ", appsSub:"小さく、的確、プライバシー優先。データはあなたのデバイスの中だけに。",
+  aGo:"App Store →",
+  a1c:"Mac · AI ワークベンチ", a1d:"Claude Code & Codex のネイティブクライアント。Mac 用 AI エージェント ダッシュボード。",
+  a2c:"iPhone · 仕事効率化", a2d:"100% オンデバイスの AI タスク管理。タスクはデバイスの外に出ません。",
+  a3c:"Mac · 仕事効率化", a3d:"会議を自動で構造化メモに。完全ローカル・プライベート。",
+  a4c:"iPhone · ユーティリティ", a4d:"1 日の会議を1つの朝のブリーフに。",
+  a5c:"iPhone · 健康", a5d:"あなたのデバイスに住む温かい AI コンパニオン。データは一切アップロードしません。",
+  a6c:"iPhone · ライフスタイル", a6d:"話しかけると答えるポケットエルフ。Dynamic Island の AI 相棒。",
+  a7c:"iPhone · 教育", a7d:"FSRS 搭載のモダンな間隔反復アプリ。",
+  a8c:"iPhone · ライフスタイル", a8d:"ペットの完全な医療記録をいつでも手元に。ローカルファースト。",
+  a9c:"Apple Watch · 健康", a9d:"Apple Watch を明晰夢の入り口に。",
+  a10c:"iPhone · ユーティリティ", a10d:"AI 宿題採点アシスタント。写真を撮るだけで解説。",
+  a11c:"iPhone · 健康", a11d:"プライバシー重視のフィットネス伴侶。",
+  a12c:"iPhone · このページのアプリ", a12d:"お父さん・お母さんはワンタップ —— 今見ているこのアプリです。"
 }
 };
 const saved = localStorage.getItem("kinetmorning_lang");
